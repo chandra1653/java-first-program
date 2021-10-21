@@ -7,7 +7,7 @@ public class SavingsCalculator {
     private float[] debits;
     private float[] credits;
 
-    SavingsCalculator(float[] credits, float[] debits) {
+    public SavingsCalculator(float[] credits, float[] debits) {
         this.credits = credits;
         this.debits = debits;
     }
