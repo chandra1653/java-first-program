@@ -29,7 +29,7 @@ public class MortgageCalculator {
         double m = loanAmount * (getMonthlyInterestRate() * Math.pow(1 + getMonthlyInterestRate(), getNumberOfPayments())) / ((Math.pow(1 + getMonthlyInterestRate(), getNumberOfPayments())) - 1);
         this.monthlyPayment = m;
     }
-    
+
     public String toString() {
 
         DecimalFormat df = new DecimalFormat("####0.00");
