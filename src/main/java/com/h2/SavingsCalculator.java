@@ -3,6 +3,7 @@ package com.h2;
 import java.time.LocalDate;
 import java.time.YearMonth;
 
+
 public class SavingsCalculator {
     private float[] debits;
     private float[] credits;
@@ -46,10 +47,10 @@ public class SavingsCalculator {
         float[] credits = new float[creditsAsString.length];
         float[] debits = new float[debitsAsString.length];
         for (int i = 0; i < credits.length; i++) {
-            credits[i] = Utilities.getFloatValues(creditsAsString[i]);
+            credits[i] = Utilities.getFloatValue(creditsAsString[i]);
         }
         for (int j = 0; j < debits.length; j++) {
-            debits[j] = Utilities.getFloatValues(debitsAsString[j]);
+            debits[j] = Utilities.getFloatValue(debitsAsString[j]);
         }
         final SavingsCalculator calculator = new SavingsCalculator(credits, debits);
         float netSavings = calculator.calculate();
